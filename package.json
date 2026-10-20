@@ -1,0 +1,20 @@
+{
+  "name": "vastu-design-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vastu Design - interior design studio website with client-managed gallery",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "multer": "^1.4.4"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.35.5"
+  }
+}

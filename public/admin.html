@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owner login | Vastu Design</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Noto+Serif+Devanagari:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  body { background: var(--sand); }
+  .login { min-height: 100svh; display: grid; place-items: center; padding: 24px; }
+  .login .card { width: min(420px, 100%); text-align: center; }
+  .login img { width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 14px; }
+  .login form { text-align: left; margin-top: 22px; }
+  .bar { background: var(--ivory); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; }
+  .bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; flex-wrap: wrap; }
+  .bar .brand img { width: 38px; height: 38px; } .bar .brand b { font-size: 1.1rem; }
+  .bar .acts { display: flex; gap: 10px; align-items: center; }
+  .btn.sm { padding: .5em 1.1em; font-size: .85rem; }
+  .btn.danger { background: #9b2c1a; border-color: #9b2c1a; color: #fff; }
+  .btn.danger:hover { background: #7a2113; border-color: #7a2113; }
+  .tabs { display: flex; gap: 6px; margin: 26px 0 22px; flex-wrap: wrap; }
+  .tab { border: 1px solid var(--line); background: var(--ivory); padding: .6em 1.3em; border-radius: 999px; font-size: .95rem; }
+  .tab[aria-selected="true"] { background: var(--ink); color: var(--ivory); border-color: var(--ink); }
+  .tab small { background: var(--clay); color: #fff; border-radius: 999px; padding: 0 8px; margin-left: 6px; font-size: .75rem; }
+  main.adm { padding-bottom: 80px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }
+  .mc { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+  .mc .th { aspect-ratio: 4 / 3; background: var(--sand-2); position: relative; }
+  .mc .th img, .mc .th video { width: 100%; height: 100%; object-fit: cover; }
+  .mc .badge { top: 8px; left: 8px; }
+  .mc .bd { padding: 12px; display: grid; gap: 8px; }
+  .mc input[type=text] { padding: .5em .7em; font-size: .95rem; }
+  .mc label.chk { display: flex; gap: 8px; align-items: center; text-transform: none; letter-spacing: 0; font-size: .88rem; margin: 0; color: var(--ink); }
+  .mc .row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .saved { color: #1b5a38; font-size: .8rem; opacity: 0; transition: opacity .3s; } .saved.on { opacity: 1; }
+  .drop { border: 2px dashed var(--sand-2); background: var(--ivory); border-radius: var(--radius); padding: 40px 20px; text-align: center; cursor: pointer; transition: .2s; }
+  .drop:hover, .drop.over { border-color: var(--clay); background: #fff; }
+  .drop b { font-family: var(--serif); font-size: 1.5rem; font-weight: 500; display: block; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--ivory); margin-bottom: 18px; }
+  .seg button { border: 0; background: none; padding: .6em 1.3em; } .seg button[aria-pressed="true"] { background: var(--clay); color: #fff; }
+  .q { display: grid; gap: 12px; margin: 22px 0; }
+  .qi { display: grid; grid-template-columns: 84px 1fr auto; gap: 14px; align-items: center; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 10px; }
+  .qi .pv { width: 84px; height: 64px; border-radius: 8px; overflow: hidden; background: var(--sand-2); } .qi .pv img, .qi .pv video { width: 100%; height: 100%; object-fit: cover; }
+  .qi .st { font-size: .8rem; color: var(--muted); min-width: 80px; text-align: right; }
+  .qi .bar2 { height: 4px; background: var(--sand); border-radius: 4px; margin-top: 6px; overflow: hidden; } .qi .bar2 i { display: block; height: 100%; width: 0; background: var(--clay); transition: width .2s; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .pair .drop { padding: 26px 10px; } .pair img { max-height: 140px; margin: 10px auto 0; border-radius: 8px; }
+  .enq { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; margin-bottom: 14px; }
+  .enq h3 { margin: 0 0 4px; font-size: 1.3rem; } .enq .m { white-space: pre-wrap; margin: 10px 0; }
+  .panel { max-width: 640px; }
+  .hint { font-size: .88rem; color: var(--muted); margin-top: 6px; }
+  .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--ink); color: #fff; padding: 12px 20px; border-radius: 999px; z-index: 200; font-size: .95rem; }
+  @media (max-width: 560px) { .qi { grid-template-columns: 64px 1fr; } .qi .st { grid-column: 1 / -1; text-align: left; } .pair { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body data-page="admin">
+<div id="app"></div>
+<script src="/js/site.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>

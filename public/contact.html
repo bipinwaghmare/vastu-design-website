@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Vastu Design</title>
+<meta name="description" content="Call or message Vastu Design in Alibaug to discuss your interior project.">
+<meta name="theme-color" content="#fbf7f0">
+<link rel="icon" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Noto+Serif+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="contact">
+<main id="main">
+<div class="page-head"><div class="wrap"><span class="eyebrow">Contact</span><h1>Let's talk about your home.</h1><p>Call, message on WhatsApp, or send a note below. Varad will get back to you personally.</p></div></div>
+<section style="padding-top:30px"><div class="wrap contact-grid">
+  <div class="rv">
+    <span class="muted" style="font-size:.8rem;letter-spacing:.18em;text-transform:uppercase">Call Varad Langi</span>
+    <a class="big-phone" data-tel data-phone href="tel:+919876543285">+91 98765 43285</a>
+    <div class="cta-row"><a class="btn" data-tel href="tel:+919876543285">Call now</a><a class="btn wa" data-wa target="_blank" rel="noopener">WhatsApp</a></div>
+    <ul class="info-list">
+      <li><span id="i1"></span><div><small>Studio</small><span data-address>Alibaug, Maharashtra</span><br><a class="muted" href="https://www.google.com/maps/search/?api=1&query=Alibaug%2C+Maharashtra" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px">Open in Maps</a></div></li>
+      <li><span id="i2"></span><div><small>Who you'll speak to</small>Varad Langi, Civil Engineer</div></li>
+    </ul>
+  </div>
+  <form class="card rv" id="form" novalidate>
+    <h3>Send a message</h3>
+    <div class="row2">
+      <div class="field"><label for="n">Your name</label><input id="n" name="name" type="text" autocomplete="name" required maxlength="80"></div>
+      <div class="field"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20"></div>
+    </div>
+    <div class="field"><label for="i">I'm interested in</label><select id="i" name="interest"><option>Full home interiors</option><option>Renovation</option><option>Single room / wardrobe / TV unit</option><option>Villa / bungalow</option><option>Not sure yet</option></select></div>
+    <div class="field"><label for="m">Tell us about your space</label><textarea id="m" name="message" required maxlength="2000" placeholder="Location, size, and what you have in mind"></textarea></div>
+    <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" type="submit" id="send">Send message</button>
+    <div id="fmsg" role="status"></div>
+  </form>
+</div></section>
+</main>
+<script src="/js/site.js"></script>
+<script src="/js/contact.js"></script>
+</body>
+</html>

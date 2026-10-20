@@ -1,0 +1,126 @@
+{
+  "media": [
+    {
+      "id": "s-villa",
+      "type": "photo",
+      "title": "Poolside Villa, Alibaug",
+      "category": "Exteriors",
+      "featured": true,
+      "createdAt": 11,
+      "src": "/uploads/villa-pool.jpg",
+      "thumb": "/uploads/villa-pool-t.jpg"
+    },
+    {
+      "id": "s-bed",
+      "type": "photo",
+      "title": "Teal & Teak Bedroom",
+      "category": "Interiors",
+      "featured": true,
+      "createdAt": 10,
+      "src": "/uploads/bedroom-teal.jpg",
+      "thumb": "/uploads/bedroom-teal-t.jpg"
+    },
+    {
+      "id": "s-ba",
+      "type": "compare",
+      "title": "Bedroom Makeover",
+      "category": "Renovation",
+      "featured": true,
+      "createdAt": 9,
+      "src": "/uploads/bedroom-after.jpg",
+      "thumb": "/uploads/bedroom-after-t.jpg",
+      "before": "/uploads/bedroom-before.jpg"
+    },
+    {
+      "id": "s-wip",
+      "type": "photo",
+      "title": "Work in Progress",
+      "category": "On Site",
+      "featured": false,
+      "createdAt": 8,
+      "src": "/uploads/work-in-progress.jpg",
+      "thumb": "/uploads/work-in-progress-t.jpg"
+    },
+    {
+      "id": "s-v1",
+      "type": "video",
+      "title": "Villa Walkthrough",
+      "category": "Exteriors",
+      "featured": true,
+      "createdAt": 7,
+      "src": "/uploads/video-1.mp4",
+      "poster": "/uploads/video-1-poster.jpg"
+    },
+    {
+      "id": "s-v2",
+      "type": "video",
+      "title": "Before & After: Living Space",
+      "category": "Renovation",
+      "featured": false,
+      "createdAt": 6,
+      "src": "/uploads/video-2.mp4",
+      "poster": "/uploads/video-2-poster.jpg"
+    },
+    {
+      "id": "s-v3",
+      "type": "video",
+      "title": "From 3D Design to Site",
+      "category": "On Site",
+      "featured": false,
+      "createdAt": 5,
+      "src": "/uploads/video-3.mp4",
+      "poster": "/uploads/video-3-poster.jpg"
+    },
+    {
+      "id": "s-v4",
+      "type": "video",
+      "title": "An Empty Room, Reimagined",
+      "category": "Renovation",
+      "featured": false,
+      "createdAt": 4,
+      "src": "/uploads/video-4.mp4",
+      "poster": "/uploads/video-4-poster.jpg"
+    },
+    {
+      "id": "s-v5",
+      "type": "video",
+      "title": "Site Progress Walkthrough",
+      "category": "On Site",
+      "featured": false,
+      "createdAt": 3,
+      "src": "/uploads/video-5.mp4",
+      "poster": "/uploads/video-5-poster.jpg"
+    },
+    {
+      "id": "s-v6",
+      "type": "video",
+      "title": "Before the Transformation",
+      "category": "Renovation",
+      "featured": false,
+      "createdAt": 2,
+      "src": "/uploads/video-6.mp4",
+      "poster": "/uploads/video-6-poster.jpg"
+    },
+    {
+      "id": "s-v7",
+      "type": "video",
+      "title": "Teak Entrance Reveal",
+      "category": "Interiors",
+      "featured": true,
+      "createdAt": 1,
+      "src": "/uploads/video-7.mp4",
+      "poster": "/uploads/video-7-poster.jpg"
+    }
+  ],
+  "settings": {
+    "phone": "9876543285",
+    "tagline": "Homes designed with calm, built with care.",
+    "address": "Alibaug, Maharashtra, India",
+    "about": "Vastu Design is an interior design and execution studio in Alibaug, led by Varad Langi, a civil engineer. We plan, design and build interiors that feel warm, uncluttered and right for the way you live, with attention to light, air and the principles of Vastu. Because we understand construction as well as design, what you see in the plan is what gets built on site.",
+    "certifications": [
+      "Qualified Civil Engineer",
+      "Certified & experienced in interior execution"
+    ]
+  },
+  "enquiries": []
+}
